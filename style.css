@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #090b1a;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cardComponent {
+  background-color: #1b1938;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin: 20px;
+  border-radius: .5em;
+}
+
+.container {
+  padding: 0 10px 10px 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container span {
+  color: #aa5cdb;
+}
+
+.container h2 {
+  font-family: "lexend deca";
+  color: white;
+}
+
+.container p {
+  font-family: "inter";
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container li {
+  font-family: "lexend deca";
+  color: white;
+  list-style: none;
+}
+
+.container ul {
+  padding: 0;
+}
+
+.container .statHeadings {
+  font-family: "inter";
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.container li + .statHeadings {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
