@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -12,6 +14,8 @@ body {
 
 img {
   max-width: 100%;
+  border-radius: 0.5em 0.5em 0 0;
+  opacity: 0.5;
 }
 
 .cardComponent {
@@ -22,12 +26,25 @@ img {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  margin: 20px;
-  border-radius: .5em;
+  margin: 30px auto;
+  border-radius: 0.5em;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 275px;
+}
+
+.cardComponent .cardImage {
+  background-color: #5e0396;
+  border-radius: 0.5em 0.5em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container {
-  padding: 0 10px 10px 10px;
+  padding: 10px 20px 0 20px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,6 +53,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 275px;
 }
 
 .container span {
@@ -45,17 +63,21 @@ img {
 .container h2 {
   font-family: "lexend deca";
   color: white;
+  margin: 0;
 }
 
 .container p {
   font-family: "inter";
   color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  line-height: 2em;
 }
 
 .container li {
   font-family: "lexend deca";
   color: white;
   list-style: none;
+  font-size: 18px;
 }
 
 .container ul {
@@ -65,9 +87,43 @@ img {
 .container .statHeadings {
   font-family: "inter";
   color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
 }
 
 .container li + .statHeadings {
   margin-bottom: 20px;
+}
+
+@media (min-width: 1440px) {
+  .cardComponent {
+    background-color: #1b1938;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px auto;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    max-width: 1200px;
+  }
+  body {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardImage {
+    width: 600px;
+  }
+  .container {
+    width: 600px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
