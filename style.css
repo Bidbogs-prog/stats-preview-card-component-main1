@@ -15,7 +15,7 @@ body {
 img {
   max-width: 100%;
   border-radius: 0.5em 0.5em 0 0;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .cardComponent {
@@ -97,33 +97,70 @@ img {
 @media (min-width: 1440px) {
   .cardComponent {
     background-color: #1b1938;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 30px auto;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    max-width: 1200px;
-  }
-  body {
     display: -ms-grid;
     display: grid;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 0.5em;
+    margin-top: 150px;
   }
   .cardImage {
     width: 600px;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / 2 / 3;
+    border-radius: 0 0.5em 0.5em 0;
+  }
+  img {
+    border-radius: 0 0.5em 0.5em 0;
   }
   .container {
     width: 600px;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: left;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 500px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container p {
+    padding: 0 100px 0 0;
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+  .container h2 {
+    font-size: 35px;
+    margin-top: 40px;
+  }
+  .container li {
+    font-size: 23px;
+  }
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .stats .col + .col {
+    margin-left: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

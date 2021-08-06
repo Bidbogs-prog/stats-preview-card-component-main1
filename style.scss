@@ -16,7 +16,7 @@ body {
 img {
   max-width: 100%;
   border-radius: 0.5em 0.5em 0 0;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .cardComponent {
@@ -86,25 +86,62 @@ img {
 @media (min-width: $desktopView) {
   .cardComponent {
     background-color: hsl(244, 38%, 16%);
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     margin: 30px auto;
     width: 100%;
-    justify-content: center;
-    flex-direction: row-reverse;
     max-width: 1200px;
+    border-radius: 0.5em;
+    margin-top:150px;
   }
 
-  body {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-  }
+ 
 
   .cardImage {
     width: 600px;
+    grid-area: 1 / 2 / 2 / 3;
+    border-radius: 0 0.5em 0.5em 0;
+    
+  }
+
+  img{
+    border-radius: 0 0.5em 0.5em 0;
   }
 
   .container {
     width: 600px;
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: left;
+    padding: 0;
+    display: flex;
+    max-width: 500px;
+    align-items: stretch;
+    justify-content: center;
+
+    p{
+      padding: 0 100px 0 0;
+      font-size: 15px;
+      margin-bottom: 50px;
+    }
+
+    h2{
+      font-size: 35px;
+      margin-top: 40px;
+    }
+
+    li{
+      font-size: 23px;
+
+    }
+
+  }
+
+  .stats{
+    display: flex;
+    justify-content: flex-start;
+  
+    .col + .col{
+      margin-left: 100px;
+    }
   }
 }
