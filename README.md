@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-component-using-scss-grid-and-flexbox-Brzhd5rm3)
+- Live Site URL: (https://bidbogs-prog.github.io/stats-preview-card-component-main1/)
 
 ## My process
 I used a mobile-first workflow to create the card and build its responsiveness from that point. Seeing that it is only a card component, considerations for a tablet-view were not prioritized. I used a combination of grid and flexbox to make the card component as accurate and responsive as possible. Though the use of both flex and grid is not necessary by any means for this project, I found it helpful to use it on such small components to train my skills in them. As such, I used grid to create two different grid for the image and the text and then used flex on both to 1- stretch the image to fit the grid container it was placed in and 2-align the text in columns to fit the design. I then made use of a media query to make the design responsive for both mobile and desktop views using variable for breakpoints and colors.
